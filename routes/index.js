@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 
 
 //connect to db
-mongoose.connect('mongodb://localhost/Students');
+mongoose.connect('mongodb+srv://keithpacana:sparky99@cluster0-sw1fm.mongodb.net/test?retryWrites=true');
 let db = mongoose.connection;
 
 db.once('open',function() {
