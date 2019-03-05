@@ -1,0 +1,50 @@
+extends layout
+
+block content
+  link(rel='stylesheet' href='bower_components/jqwidgets-framework/jqwidgets/styles/jqx.base.css' type='text/css')
+  script(type='text/javascript' src='../../bower_components/jqwidgets-framework/scripts/jquery-1.11.1.min.js')
+  script(type='text/javascript' src='../../bower_components/jqwidgets-framework/jqwidgets/jqxcore.js')
+  script(type='text/javascript' src='../../bower_components/jqwidgets-framework/jqwidgets/jqxdata.js')
+  script(type='text/javascript' src='../../bower_components/jqwidgets-framework/jqwidgets/jqxbuttons.js')
+  script(type='text/javascript' src='../../bower_components/jqwidgets-framework/jqwidgets/jqxscrollbar.js')
+  script(type='text/javascript' src='../../bower_components/jqwidgets-framework/jqwidgets/jqxdatatable.js')
+  script(type='text/javascript').
+  script(type='text/javascript').
+    $(document).ready(function () {
+    var data = new Array();
+    var firstNames = !{JSON.stringify(students)};
+    for (var i = 0; i < firstNames.length; i++) {
+    var row = {};
+    row["firstname"] = firstNames[i].name;
+    data[i] = row;
+    }
+    var source =
+    {
+    localData: data,
+    dataType: "array",
+    dataFields:
+    [
+    { name: 'firstname', type: 'string' },
+    ]
+    };
+    var dataAdapter = new $.jqx.dataAdapter(source);
+    $("#table").jqxDataTable(
+    {
+    width: 300,
+    theme: 'energyblue',
+    pageable: true,
+    pagerButtonsCount: 10,
+    source: dataAdapter,
+    columnsResize: true,
+    columns: [
+    { text: 'Name', dataField: 'firstname', width: 300 }
+    ]
+    });
+    });
+  div(align = "center")
+  h1 Students in #{title}
+  #table
+
+
+
+

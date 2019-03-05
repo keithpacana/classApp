@@ -1,0 +1,19 @@
+extends layout
+	
+block content
+	h1(align='center') #{title}
+	div(align='center')
+		form(method='POST', action='/')
+			#form-group
+				label(align='left') Name:
+				br
+				input#exampleInputEmail1.form-control-md(name='name', type='text')
+
+			#form-group
+				label Class:
+				br
+				input.form-control-md(name='class', type='text')
+			br
+			input.btn.btn-primary(type='submit',value='Submit')
+
+

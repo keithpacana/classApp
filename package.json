@@ -1,0 +1,20 @@
+{
+  "name": "class",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "Keith Pacana",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.3.1",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.16.4",
+    "jqwidgets-framework": "^
