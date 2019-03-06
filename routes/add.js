@@ -27,7 +27,7 @@ let Student = require('../models/student');
 app.post('/',function(req,res) {
 		Student.find({class : req.body.search}, function(err, students){
 		if (err) {
-			console.log("heree");
+			console.log(err);
 		}
 		else {
 		res.render('add_student', {

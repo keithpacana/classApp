@@ -2,11 +2,11 @@ let mongoose = require('mongoose');
 
 let studentSchema = mongoose.Schema({
 	name: {
-		type: Number,
+		type: String,
 		required: true
 	},
 	class: {
-		type: Number,
+		type: String,
 		required:true
 	}
 });
