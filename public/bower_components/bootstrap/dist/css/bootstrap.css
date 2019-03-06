@@ -224,6 +224,7 @@ th {
 label {
   display: inline-block;
   margin-bottom: 0.5rem;
+
 }
 
 button {
@@ -1857,8 +1858,8 @@ pre code {
 .form-control {
   display: block;
   width: 100%;
-  height: calc(1.5em + 0.75rem + 2px);
-  padding: 0.375rem 0.75rem;
+  height: calc(1.5em + 0.780em + 2px);
+  padding: 0.375rem 0.80rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -2421,14 +2422,16 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #0AA8E9;
+  border-color: #0AA8E9;
+  width: 100%;
+  margin-top: 2%;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: #0993CB;
+  border-color: #0993CB;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -2756,14 +2759,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-success {
-  color: #28a745;
-  border-color: #28a745;
+  color: #52C9FA;
+  border-color: #52C9FA;
 }
 
 .btn-outline-success:hover {
   color: #fff;
-  background-color: #28a745;
-  border-color: #28a745;
+  background-color: #52C9FA;
+  border-color: #52C9FA;
 }
 
 .btn-outline-success:focus, .btn-outline-success.focus {

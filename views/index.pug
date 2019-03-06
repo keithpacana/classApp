@@ -1,19 +1,17 @@
 extends layout
-	
-block content
-	h1(align='center') #{title}
-	div(align='center')
-		form(method='POST', action='/')
-			#form-group
-				label(align='left') Name:
-				br
-				input#exampleInputEmail1.form-control-md(name='name', type='text')
 
-			#form-group
-				label Class:
-				br
-				input.form-control-md(name='class', type='text')
-			br
-			input.btn.btn-primary(type='submit',value='Submit')
+block content
+  div.card2
+   div.card
+    div#title2
+     p.title Add Student
+    form(method='POST', action='/').form-center
+      .form-group
+        label Student ID
+        input.form-control(name='name',type='text', aria-describedby='emailHelp', placeholder='Enter SID')
+      .form-group
+        label Class ID
+        input.form-control(name='class',type='text', placeholder='Enter class ID')
+      button.btn.btn-primary(type='submit' value='submit') Add
 
 

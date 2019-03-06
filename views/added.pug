@@ -1,4 +1,6 @@
-extends  layout
+extends index
 
 block content
-	h1 You are now enrolled in #{course}
+  .alert.alert-success(role='alert')
+   | #{student} has been successfully added to #{course}! 
+   a.alert-link(href='/') Add another.

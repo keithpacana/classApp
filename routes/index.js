@@ -42,7 +42,7 @@ app.post('/',function(req,res) {
 			console.log("HEREE")
 			return;
 		} else {
-			res.render('added', {course: student.class});
+			res.render('added',{course: student.class, student: student.name});
 		}
 	})
 	return ;

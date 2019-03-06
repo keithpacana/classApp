@@ -31,6 +31,7 @@ block content
     $("#table").jqxDataTable(
     {
     width: 300,
+    height: 275,
     theme: 'energyblue',
     pageable: true,
     pagerButtonsCount: 10,
@@ -41,9 +42,11 @@ block content
     ]
     });
     });
-  div(align = "center")
-  h1 Students in #{title}
-  #table
+  div.card2
+   div.card
+     h1#title3 Students in #{title}
+     div.widget-container
+      #table
 
 
 
