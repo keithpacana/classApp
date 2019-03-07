@@ -59,3 +59,26 @@ body {
 	color: #4A4A4A;
 	font-weight: 500;
 }
+
+.other {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 7%;
+	width: 700px;
+
+}
+
+.logo{
+	font-size: 50px;
+	text-align: center;
+}
+.alert {
+	text-align: center;
+}
+
+.a-other {
+	display: block;
+	margi
+	text-align: center;
+}

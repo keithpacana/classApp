@@ -1,6 +1,9 @@
 extends index
 
 block content
-  .alert.alert-success(role='alert')
-   | #{student} has been successfully added to #{course}! 
-   a.alert-link(href='/') Add another.
+  div.other
+   h1.logo Course Success
+   .alert.alert-success(role='alert')
+    | #{student} has been successfully added to #{course}! 
+    br
+    a.alert-link(href='/') Add another.
