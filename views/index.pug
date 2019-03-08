@@ -8,10 +8,10 @@ block content
     form(method='POST', action='/').form-center
       .form-group
         label Student ID
-        input.form-control(name='name',type='', aria-describedby='emailHelp', placeholder='Enter SID',required="true")
+        input.form-control(name='name',type='number', aria-describedby='emailHelp', placeholder='Enter SID',required="true")
       .form-group
         label Class ID
-        input.form-control(name='class',type='text', placeholder='Enter class ID', required="true")
+        input.form-control(name='class',type='number', placeholder='Enter class ID', required="true")
       button.btn.btn-primary(type='submit' value='submit') Add
 
 

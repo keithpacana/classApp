@@ -1,9 +1,11 @@
 extends index
 
 block content
-  div.other
-   h1.logo Course Success
+  div#extra-pages
    .alert.alert-success(role='alert')
     | #{student} has been successfully added to #{course}! 
     br
-    a.alert-link(href='/') Add another.
+   div.a-other
+    a(href='/') Add another Student
+    form(action='/course', method='post')
+      button.btn-link(type='submit', name='search', value=course) View Students in Course: #{course} 

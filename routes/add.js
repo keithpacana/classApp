@@ -30,8 +30,13 @@ app.post('/',function(req,res) {
 			console.log(err);
 		}
 		else {
+		console.log(req.body.search);
+		var title_name = req.body.search;
+		if (Array.isArray(req.body.search)) {
+			title_name = req.body.search[0];
+		}
 		res.render('add_student', {
-			title: req.body.search[0],
+			title: title_name,
 			students: students
 		});
 	}

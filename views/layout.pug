@@ -16,8 +16,10 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
           span.sr-only (current)
       //li.nav-item
         a.nav-link(href='#') Link
-    form.form-inline.my-2.my-lg-0(method='POST', action='/add')
-      input.form-control.mr-sm-2(name = 'search' type='search' placeholder='Search' aria-label='Search')
+    form.form-inline.my-2.my-lg-0(method='POST', action='/course')
+      input.form-control.mr-sm-2(name = 'search' type='number' placeholder='Search Course ID' aria-label='Search')
       button.btn.btn-outline-success.my-2.my-sm-0(name='search',type='submit') Search
 .container
+ div.other
+  h1.logo Course Success
 block content
